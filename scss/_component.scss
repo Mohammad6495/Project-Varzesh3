@@ -1,0 +1,123 @@
+.live::after {
+    background-image: url("../img/live.gif");
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
+    display: inline-block;
+    height: 1em;
+    margin: 0;
+    position: relative;
+    top: 0.3em;
+    width: 1em;
+}
+
+.text-red {
+    color: var(--colorred) !important;
+}
+
+.navbar-brand-phone {
+    @media (min-width:768px) {
+        display: none !important;
+    }
+
+    @media (max-width:768px) {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.btn-menu {
+    @media (min-width:768px) {
+        display: none !important;
+    }
+
+    border: none !important;
+    font-size: 25px !important;
+    transform: translateY(4px);
+}
+
+.btn-menu-close {
+    position: absolute;
+    top: 15px;
+    right: 18px;
+
+    @media (min-width:768px) {
+        display: none !important;
+    }
+}
+
+.video-play {
+    position: absolute;
+    top: 40%;
+    font-size: 22px !important;
+    color: var(--colorwhite) !important;
+    right: 42%;
+    padding: 10px 15px !important;
+    background-color: rgba($color: #000000, $alpha: 0.5) !important;
+
+}
+
+.green {
+    background-color: var(--colorgreen) !important;
+}
+
+.color-red {
+    color: var(--colorred);
+}
+
+.bg-gray {
+    background-color: #f3f3f3;
+}
+
+.blue {
+    background-color: var(--colorblue) !important;
+}
+
+.nav-search-box {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 10000;
+    padding: 30px 40px;
+    background-color: var(--colorwhite);
+    form {
+        button {
+            margin-right: 20px;
+            font-size: 15px !important;
+            &:focus{
+                box-shadow: none !important;
+            }
+        }
+
+        input {
+            background-color: #fff;
+            border: 1px solid #0097a7 !important;
+            border-radius: 5px;
+            direction: rtl;
+            font-weight: 400;
+            padding: 10px 50px 10px 15px;
+            text-align: right;
+            width: 100%;
+            font-size: 14px;
+
+            &:focus {
+                box-shadow: none !important;
+            }
+        }
+    }
+}
+.d-search {
+    display: none;
+}
+.all-selector {
+    background-color:rgba($color: #000000, $alpha: 1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2999;
+    display: none;
+}
